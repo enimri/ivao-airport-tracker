@@ -1,0 +1,100 @@
+/* Base styles for the plugin */
+.ivao-pilot-tracker {
+    font-family: Arial, sans-serif;
+    margin: 20px auto; /* Center the div horizontally */
+    max-width: 1000px; /* Restrict width for better alignment */
+    padding: 0 15px; /* Add some padding */
+    display: flex; /* Flexbox for centering content */
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Center text and inline elements */
+}
+
+.ivao-pilot-tracker h2 {
+    color: #333;
+    margin: 20px 0; /* Adjust margin as needed */
+    font-size: 2em;
+}
+
+.ivao-pilot-tracker h3 {
+    color: #444;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 1.8em;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.ivao-pilot-tracker h4 {
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.ivao-pilot-tracker .table-responsive {
+    overflow-x: auto; /* Allow horizontal scrolling */
+    width: 100%;
+}
+
+.ivao-pilot-tracker table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0; /* Adjust margin as needed */
+}
+
+.ivao-pilot-tracker th, .ivao-pilot-tracker td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 0.9em;
+}
+
+.ivao-pilot-tracker th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .ivao-pilot-tracker h3, .ivao-pilot-tracker h4 {
+        font-size: 1.4em;
+    }
+
+    .ivao-pilot-tracker table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .ivao-pilot-tracker th, .ivao-pilot-tracker td {
+        white-space: nowrap;
+    }
+
+    .ivao-pilot-tracker th, .ivao-pilot-tracker td {
+        padding: 10px;
+    }
+
+    /* Make buttons and form inputs full-width */
+    .ivao-pilot-tracker form .regular-text,
+    .ivao-pilot-tracker form input[type="submit"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* Extra small screens (phones) */
+@media (max-width: 480px) {
+    .ivao-pilot-tracker h3, .ivao-pilot-tracker h4 {
+        font-size: 1.2em;
+    }
+
+    .ivao-pilot-tracker th, .ivao-pilot-tracker td {
+        font-size: 0.8em;
+        padding: 6px;
+    }
+
+    .ivao-pilot-tracker table {
+        margin-bottom: 15px;
+    }
+}
